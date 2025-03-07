@@ -23,10 +23,11 @@ export class LoginComponent implements OnInit{
     
   }
   handleLogin(){
-    debugger
+
     console.log(this.username);
     if(this.username == 'in28minutes' && this.password =='dummy'){
       this.isInValid = false;
+      sessionStorage.setItem("validUser", this.username)
       this.router.navigate(['welcome/'+ this.username]);
       console.log('this.isInValid----',this.isInValid);
       
