@@ -4,12 +4,12 @@
             ToDo Manager
         </div>
         <ul class="navbar-nav">
-            <li *ngIf="authenticatorService.isValidUser()"><a class="nav-link" routerLink="welcome/in28minutes">Home</a></li>
-            <li *ngIf="authenticatorService.isValidUser()"><a class="nav-link" routerLink="todolist">ToDos</a></li>
+            <li *ngIf="hardcodeauthenticatorService.isValidUser()"><a class="nav-link" routerLink="welcome/in28minutes">Home</a></li>
+            <li *ngIf="hardcodeauthenticatorService.isValidUser()"><a class="nav-link" routerLink="todolist">ToDos</a></li>
         </ul>
         <ul class="navbar-nav navbar-collapse justify-content-end">
-            <li *ngIf="!authenticatorService.isValidUser()"><a class="nav-link" routerLink="login">Login</a></li>
-            <li *ngIf="authenticatorService.isValidUser()"><a class="nav-link" routerLink="logout">Logout</a></li>
+            <li *ngIf="!hardcodeauthenticatorService.isValidUser()"><a class="nav-link" routerLink="login">Login</a></li>
+            <li *ngIf="hardcodeauthenticatorService.isValidUser()"><a class="nav-link" routerLink="logout">Logout</a></li>
         </ul>
     </nav>
 </header>

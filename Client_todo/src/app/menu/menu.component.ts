@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
-constructor(public authenticatorService:HardcodedAuthenticatorService){
+constructor(public hardcodeauthenticatorService:HardcodedAuthenticatorService){
 
 }
 }

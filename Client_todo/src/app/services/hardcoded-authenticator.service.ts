@@ -7,13 +7,13 @@ export class HardcodedAuthenticatorService {
 
   constructor() { }
 
-  isLoggedIn(user:any, password: any){
-    if(user === 'in28minutes' && password == 'dummy'){
-      sessionStorage.setItem("validUser", user);
-        return true;
-    }
-    return false;
-  }
+  // isLoggedIn(user:any, password: any){
+  //   if(user === 'in28minutes' && password == 'dummy'){
+  //     sessionStorage.setItem("validUser", user);
+  //       return true;
+  //   }
+  //   return false;
+  // }
 
   isValidUser(){
     let valid = sessionStorage.getItem("validUser")
