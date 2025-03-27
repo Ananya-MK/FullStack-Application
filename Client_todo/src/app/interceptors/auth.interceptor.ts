@@ -11,7 +11,7 @@ export const authInterceptor: HttpInterceptorFn = (request: HttpRequest<any>, ne
   const user = authService.getAuthenticatedUser();
   // const password = authService.getPassword();
   // const basicAuthentication = 'Basic ' + window.btoa(user + ':' + password);
-let clonedRequest:any;
+let clonedRequest=request;
   if(token && user){
      clonedRequest = request.clone({
       setHeaders: {
